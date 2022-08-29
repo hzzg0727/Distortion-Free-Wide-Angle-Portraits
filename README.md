@@ -23,24 +23,22 @@ Dependencies:
 Remark: The installation of ceres in windows is a little troublesome. For me, Vcpkg (Ref[3]) is useful to help to install and manage my packages. 
 
 ## Usage
-### Structure of files:
+### Structure of files
 
-- main.cpp  *Source code (the only code)*
-
-- examples  *Examples of this inplementation*
+```python
+- main.cpp  # Source code (the only code)
+- examples  # Examples of this inplementation
   - origin1.png
   - result1.png
   - origin2.png
   - result2.png
-  - origin3.png
-  - result3p.png
-  - result3m.png
-  
-### Running instructions:
+```
+
+### Running instructions
 
 Follow the prompts and input the necessary information, and then obtain intermediate and final run results in the results directory.
 
-#### Some parameter explanations:
+#### Some parameter explanations
 
 The FOV of the image: The field of view of the image. It needs to be given according to the shooting equipment. Typical values are 80° - 120°;
 
@@ -48,7 +46,7 @@ The scale value: The number of pixels per unit length of the grid, set according
 
 Mask generation options: The mask for the face area. It can be obtained by running the Pycharm project, and then specify the mask path to pass in; or select the interactive setting.
 
-#### Interaction Description:
+#### Interaction Description
 
 Mouse interaction marks the face area. Press the left button to start drawing. Keep the left button pressed to draw a closed curve and release the left button. Right-click in the area to color the area blue, indicating that an area is marked successfully.
 
@@ -86,25 +84,13 @@ Some test results:
 
 2. Origin image Vs Result image:
 
-![Origin2](./examples/origin2.png)
+![Origin2](./examples/origin2.png#pic_left)
 
-![Result2](./examples/result2.png)
-
-3. Origin image Vs Result images of the paper and mine:
-
-*Origin*
-
-![Origin3](./examples/origin3.png)
-
-*Paper*
-
-![Result3p](./examples/result3p.png)
-
-*Mine*
-
-![Result3m](./examples/result3m.png)
+![Result2](./examples/result2.png#pic_right)
 
 ## References
 [1] YiChang Shih, Wei-Sheng Lai, and Chia-Kai Liang. Distortion-free wide-angle portraits on camera phones. ACM Trans. Graph., 38(4), July 2019.
+
 [2] https://github.com/yzhq97/distortion-free-wide-angle.pytorch
+
 [3] https://github.com/microsoft/vcpkg
