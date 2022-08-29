@@ -11,7 +11,7 @@ I noticed that there has been a inplementation using Python & Pytorch (Ref[2]). 
 
 Here, a C++ inplementation is provided, which follows the method in the original paper as much as possible.
 
-**Instead of using a DL model to identify the region of faces, a simple interaction based on OpenCV is provided to help the user to specify the regions of faces. **
+*Instead of using a DL model to identify the region of faces, a simple interaction based on OpenCV is provided to help the user to specify the regions of faces. *
 
 ## Environment
 Dependencies:
