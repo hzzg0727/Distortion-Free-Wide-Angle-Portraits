@@ -4,10 +4,10 @@ The C++ realization of the paper Distortion-Free Wide-Angle Portraits on Camera 
 ## Introduction
 The wide field of view (FOV) of a wide-angle camera introduces more severe perspective distortion, especially causing faces to be stretched, squeezed, and tilted to look very different from reality. Correcting this distortion requires professional and tedious image editing skills. However, the algorithm proposed in the paper can make faces undistorted without affecting other parts of the photo. Given a portrait as input, an optimization problem is formulated to create a content-aware deformable mesh that locally adapts to the stereoscopic projection of the face region and evolves seamlessly to the perspective projection on the background.
 
-For more informations concerning the algorithm, see Ref[1].
+For more informations concerning the algorithm, see Ref [1].
 
 ## Inplementation
-I noticed that there has been a inplementation using Python & Pytorch (Ref[2]). However, the way of inplementation is actually different from the paper.
+I noticed that there has been a inplementation using Python & Pytorch (Ref [2]). However, the way of inplementation is actually different from the paper.
 
 Here, a C++ inplementation is provided, which follows the method in the original paper as much as possible.
 
@@ -20,7 +20,7 @@ Dependencies:
 * Ceres
 * Glog
 * SuiteSparse (Needed for solving large sparse linear systems)
-Remark: The installation of ceres in windows is a little troublesome. For me, Vcpkg (Ref[3]) is useful to help to install and manage my packages. 
+Remark: The installation of ceres in windows is a little troublesome. For me, Vcpkg (Ref [3]) is useful to help to install and manage my packages. 
 
 ## Usage
 ### Structure of files
